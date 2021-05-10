@@ -31,6 +31,14 @@ jupyter notebook --no-browser --port=8888 --ip=0.0.0.0 --allow-root
 | :-----------------------------------------------: | :---------------------------------------------------------: |
 | ![alt-text-1](imgs/vae_gan_true.png "Real Frame") | ![alt-text-2](imgs/vae_gan_recon.png "Reconstructed Frame") |
 
+### VAE/GAN data visualizations
+
+To visualize the VAE/GAN loss and distribution plots as well as the random/reconstucted images, while in the docker container run:
+
+```
+tensorboard --logdir='./WorldModels/vae_gan/logs' --port=6006
+```
+
 ## Reproducing Results From Scratch
 
 These instructions assume a machine with a 4 core cpu.
